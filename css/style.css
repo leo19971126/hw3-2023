@@ -1,85 +1,155 @@
 body{
    /* Set line spacing */
+   line-height: 1.5;
 }
 
+main, footer{
+    margin: 20px;
+}
 
 header, nav{
     /* Set padding and margin */
-
+    padding: 10px 15px 20px 25px;
+    margin: 10px 15px 0px 25px;
 }
+
 nav ul li{
     /* Set display, margin, padding, font-size, background-color */
-
+    display: inline;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.5em;
+    background-color: #f9e5c7;
 }
 
 nav a{
     /* Set text decoration*/
+    text-decoration: none;
 }
 
 a:visited{
-    /* Set color */
-
+    /* Set color NO.5*/
+    color: black;
 }
 
 nav a.current{
     /* Set text decoration, transformation, and underline properties */
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-position: under;
 }
-
 
 h1{
    /*Set font and font size*/
-
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', 'Monospace';
+    font-size: 2.5em;
 }
 
 h2{
     /*Set font, font size, and alignment*/
+    font-family: 'Anton', 'Times New Roman', 'monospace';
+    font-size: 1.5em;
+    text-align: center;
 }
 
 h3{
     /*Set font size*/
-
+    font-size: 1.25em;
+    margin: 5px;
 }
 
 h1, h2, h3{
-    /*Set margin */
-
+    /*Set margin NO.10*/
+    margin-top: 10px;
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
+    /* Style the grid class.  There is a lot here:
+    It should be 90% of the body and centered.
+    It should have a border radius
+    It should be a grid with three columns of 30% 
+    Space them horizontally to match mine.
+    Leave 10px between each row */
+    width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgb(120, 132, 148);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px;
 }
 
 .grid div{
     /* Set border properties, padding, and background color */
-
+    /* Style the images within the grid to take up 90% of the column and be centered. */
+    /* width: 90%;
+    margin: 0 auto;
+    display: block; */
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: white;
+    /* padding: 5px; */
 }
 
 .grid img{
     /* Set width, margin, and display */
+    width: 90%;
+    margin: auto;
+    display: block;
 }
-
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
-    }
+    box-shadow: 5px 1px 10px rgb(227, 228, 189);
+}
 
 .grid div:nth-child(3n)  {
-    /* Set box shadow */ 
+    /* Set box shadow */
+    /* Images on the far right should have a box shadow to their left */
+    box-shadow: -5px 1px 10px rgb(227, 228, 189);
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+     /* Images in the center should have a box shadow on both sides */
+    box-shadow: 5px 1px 10px rgb(227, 228, 189), -5px 1px 10px rgb(227, 228, 189);
 }
-    
 
 p + p {
      /* Set indentation */
+    text-indent: 1em;
   }
-  
+
 p{
      /* Set margin */
+    margin: 5px 0 0 10px;
 }
 
+.grid p{
+    margin-left: 10px;
+}
+
+.grid h3{
+    margin-left: 10px;
+}
+
+.grid ul li{
+    /* The lists within the grid should be single-spaced, use the image sketchbook.png as the list decoration, and have margin on the left and bottom. */
+    margin: 0 0 10px 30px;
+    /* width: 20px;
+    height: 20px; */
+    list-style-type: none;
+}
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+    margin: 0 0 20px 30px;
+    line-height: 1.0;
+    list-style-type: none;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sketchbook.png);
+    background-size: contain;
 }
