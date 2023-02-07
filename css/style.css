@@ -10,7 +10,7 @@ main, footer{
 header, nav{
     /* Set padding and margin */
     padding: 10px 15px 20px 25px;
-    margin: 10px 15px 0px 25px;
+    margin: 10px 15px 0 25px;
 }
 
 nav ul li{
@@ -65,12 +65,6 @@ h1, h2, h3{
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
-    /* Style the grid class.  There is a lot here:
-    It should be 90% of the body and centered.
-    It should have a border radius
-    It should be a grid with three columns of 30% 
-    Space them horizontally to match mine.
-    Leave 10px between each row */
     width: 90%;
     margin: auto;
     border-radius: 25px;
@@ -83,14 +77,9 @@ h1, h2, h3{
 
 .grid div{
     /* Set border properties, padding, and background color */
-    /* Style the images within the grid to take up 90% of the column and be centered. */
-    /* width: 90%;
-    margin: 0 auto;
-    display: block; */
     border: 2px solid #000000;
     border-radius: 10px;
     background-color: white;
-    /* padding: 5px; */
 }
 
 .grid img{
@@ -107,13 +96,11 @@ h1, h2, h3{
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */
-    /* Images on the far right should have a box shadow to their left */
     box-shadow: -5px 1px 10px rgb(227, 228, 189);
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
-     /* Images in the center should have a box shadow on both sides */
     box-shadow: 5px 1px 10px rgb(227, 228, 189), -5px 1px 10px rgb(227, 228, 189);
 }
 
@@ -133,14 +120,6 @@ p{
 
 .grid h3{
     margin-left: 10px;
-}
-
-.grid ul li{
-    /* The lists within the grid should be single-spaced, use the image sketchbook.png as the list decoration, and have margin on the left and bottom. */
-    margin: 0 0 10px 30px;
-    /* width: 20px;
-    height: 20px; */
-    list-style-type: none;
 }
 
 .grid ul li{
